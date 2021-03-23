@@ -3,7 +3,7 @@ SRConED is a comprehensive experimental and numerical database for bare steel an
 
 Citation:
 -----------
-Mak L. and Elkady A. (2021). "Experimental database on flush-end plate connections". ASCE Journal of Structural Engineering (accepted).
+Mak L. and Elkady A. (2021). "Experimental database on flush-end plate connections". ASCE Journal of Structural Engineering (In press). DOI: 10.1061/(ASCE)ST.1943-541X.0003064.
 
 Notes:
 -----------
