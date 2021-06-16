@@ -3,7 +3,7 @@ SRConED is an interactive interface for exploring and processing a recently-coll
 
 Citation:
 -----------
-Mak L. and Elkady A. (2021). "Experimental database on flush-end plate connections". ASCE Journal of Structural Engineering (In press). DOI: 10.1061/(ASCE)ST.1943-541X.0003064.
+Mak L. and Elkady A. (2021). "Experimental database on flush-end plate connections". ASCE Journal of Structural Engineering 147(7). DOI: 10.1061/(ASCE)ST.1943-541X.0003064.
 
 Notes:
 -----------
