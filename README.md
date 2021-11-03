@@ -8,3 +8,5 @@ Mak L. and Elkady A. (2021). "Experimental database on flush-end plate connectio
 Notes:
 -----------
 The current database explorer executable (SRConED-Explorer.exe) is only available for Windows-based machines. After installation, the software need to be opened directly from the installation directory.
+
+This database is being updated on a regular basis. Fork this repository to make sure you recieve all updates.
