@@ -5,7 +5,7 @@
 --------------
 
 ## SRConED
-SRConED is an interactive interface for exploring and processing a recently-collated comprehensive experimental database for bare steel and composite semi-rigid (SR) connections. The current version of the database (v1.0) include data for flush end-plate connections (FEP) covering more than 360 tests from 60 experimental programs. Data for other SR connections will be rolled out in future versions.
+SRConED is an interactive interface for exploring and processing a recently-collated comprehensive experimental database for bare steel and composite semi-rigid (SR) connections. The current version of the database (v2.0) include data for flush end-plate connections (FEP) covering more than 420 tests from 71 experimental programs. Data for other SR connections will be rolled out in future versions.
 
 ## Citation
 Mak L. and Elkady A. (2021). "Experimental database on flush-end plate connections". ASCE Journal of Structural Engineering 147(7). DOI: 10.1061/(ASCE)ST.1943-541X.0003064.
