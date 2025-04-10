@@ -2,6 +2,8 @@
   <img width="500" src="Screenshot.png" alt="SRConED Explorer">
 </p>
 
+![SRConED-ezgif com-crop](https://github.com/user-attachments/assets/86f5d655-0d8e-42db-9fcd-c854f619482c)
+
 --------------
 
 ## SRConED
