@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" src="misc\Screenshot.png" alt="SRConED Explorer">
+  <img width="600" src="misc\Screenshot.png" alt="SRConED Explorer">
   <img src="misc\SRConED-gif.gif" alt="animated">
 </p>
 
