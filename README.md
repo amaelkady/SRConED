@@ -1,11 +1,7 @@
 <p align="center">
-  <img width="500" src="Screenshot.png" alt="SRConED Explorer">
+  <img width="500" src="misc\Screenshot.png" alt="SRConED Explorer">
+  <img src="misc\SRConED-gif.gif" alt="animated">
 </p>
-
-<p align="center">
-  <img src="SRConED-gif.gif" alt="animated">
-</p>
---------------
 
 ## SRConED
 SRConED is an interactive interface for exploring and processing a recently-collated comprehensive experimental database for bare steel and composite semi-rigid (SR) connections. The current version of the database (v2.2302) include data for flush end-plate connections (FEP) covering more than 420 tests from 71 experimental programs. Data for other SR connections will be rolled out in future versions.
