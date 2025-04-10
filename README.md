@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="SRConED-gif" alt="animated">
+  <img src="SRConED-gif.gif" alt="animated">
 </p>
 --------------
 
