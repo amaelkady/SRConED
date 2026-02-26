@@ -12,7 +12,7 @@ Mak, L. and Elkady, A. (2021). "Experimental database on flush-end plate connect
 Ding, Z. and Elkady, A. (2023). "Semirigid bolted endplate moment connections: Review and experimental-based assessment of available predictive models". ASCE Journal of Structural Engineering 149(9). DOI: [10.1061/JSENDH.STENG-11797](https://doi.org/10.1061/JSENDH.STENG-11797).
 
 ## Notes
-* The current database explorer executable (SRConED-Explorer.exe) is only available for Windows-based machines. After installation, the software need to be opened directly from the installation directory.
+* The current database explorer executable (SRConED-Explorer.exe) is only available for Windows-based machines.
 
 * This database is being updated on a regular basis. Fork this repository to make sure you recieve all updates.
 
