@@ -30,10 +30,11 @@ bbf =  220; % Beam flange width [mm]
 tbw =  12;  % Beam web thickness [mm]
 tbf =  19;  % Beam flange thickness [mm]
 
-g   =  120;  % Horizontal distance between the bolt columns; i.e., bolt gauge distance [mm]
-tep =  12;   % Endplate thickness [mm]
-ert =  85;   % Distance from top tension bolt row center to endplate edge [mm]
-pt  =  120;  % Distance between the tension bolt rows (above and below the beam flange) [mm]
+g     =  120;  % Horizontal distance between the bolt columns; i.e., bolt gauge distance [mm]
+tep   =  12;   % Endplate thickness [mm]
+ert   =  85;   % Distance from top tension bolt row center to endplate edge [mm]
+pt    =  120;  % Distance between the tension bolt rows (above and below the beam flange) [mm]
+tweld =  8;    % Weld leg length [mm]
 
 d_b  = 20;  % Bolt nominal diameter [mm]
 As   = 245; % Bolt stress area (threaded part) [mm2]
@@ -105,15 +106,15 @@ sigma_rel  = [0.10 0.05 0.14 0.11;
 
 if Type == "MISO ANN"
 
-    [R, M, Mye, Ke, Ks,thetaC] = get_Model_EEPC_ANN_MISO(pt,tep,tcf,tcw,hb,hc,d_b,fyP,fyC,fuC,fuP,fyb,fub,StiffC,Load,g,Layout,tbf,bbf);
+    [R, M, My, Mye, Ke, Ks,thetaC] = get_Model_EEPC_ANN_MISO(pt,tep,tcf,tcw,hb,hc,d_b,fyP,fyC,fuC,fuP,fyb,fub,StiffC,Load,g,Layout,tbf,bbf,tweld);
 
 elseif Type == "MIMO ANN"
 
-    [R, M, Ke, Mye, Ks, thetaC] = get_Model_EEPC_ANN_MIMO(pt,tep,tcf,tcw,hb,hc,d_b,fyP,fyC,fuC,fuP,fyb,fub,StiffC,Load,g,Layout,tbf,bbf);
+    [R, M, Ke, My, Mye, Ks, thetaC] = get_Model_EEPC_ANN_MIMO(pt,tep,tcf,tcw,hb,hc,d_b,fyP,fyC,fuC,fuP,fyb,fub,StiffC,Load,g,Layout,tbf,bbf,tweld);
 
 elseif Type == "XGBoost"
 
-    [R, M, Mye, Ke, Ks, thetaC] = get_Model_EEPC_XGBoost(pt,tep,tcf,tcw,hb,hc,d_b,fyP,fyC,fuC,fuP,fyb,fub,StiffC,Load,g,Layout,tbf,bbf);
+    [R, M, My, Mye, Ke, Ks, thetaC] = get_Model_EEPC_XGBoost(pt,tep,tcf,tcw,hb,hc,d_b,fyP,fyC,fuC,fuP,fyb,fub,StiffC,Load,g,Layout,tbf,bbf,tweld);
 
 end
 
@@ -125,9 +126,10 @@ set(gca, 'fontname', 'times', 'fontsize',18);
 plot(R*100, M,'-ok','linewidth',1,'DisplayName','XGBoost');
 
 out{1}=['\itK\rm_{e } = ',num2str(round(Ke)), ' kN.m/rad'];
-out{2}=['\itM\rm_{ye} = ',num2str(round(Mye)),' kN.m'];
-out{3}=['\itM\rm_{c } = ',num2str(round(Mye+Ks*(thetaC))) ,' kN.m'];
-out{4}=['\it\theta\rm_{c }  = ',num2str(round(thetaC*10000)/100) ,' % rads'];
+out{2}=['\itM\rm_{y } = ',num2str(round(My)), ' kN.m/rad'];
+out{3}=['\itM\rm_{ye} = ',num2str(round(Mye)),' kN.m'];
+out{4}=['\itM\rm_{c } = ',num2str(round(Mye+Ks*(thetaC))) ,' kN.m'];
+out{5}=['\it\theta\rm_{c }  = ',num2str(round(thetaC*10000)/100) ,' % rads'];
 
 text(1.02*R(end-1)*100, 0.75*((Mye+Ks*(thetaC))),out,'fontname','times','fontsize',13); % out
 
